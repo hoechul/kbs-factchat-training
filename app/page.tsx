@@ -15,18 +15,19 @@ import {
 export default function Home() {
   return (
     <main id="top" className="relative overflow-hidden bg-transparent xl:pl-60">
+      {/* 페이지 전체 고정 배경 이미지 */}
+      <div
+        className="pointer-events-none fixed inset-0 -z-20 bg-cover bg-center"
+        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+      />
+      {/* 가독성 오버레이 (더 투명하게) */}
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-white/40" />
+
       <Nav />
       <SideMenu />
 
       {/* ===== HERO ===== */}
       <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
-        {/* 배경 이미지 */}
-        <div
-          className="pointer-events-none absolute inset-0 -z-20 bg-cover bg-center"
-          style={{ backgroundImage: "url('/hero-bg.jpg')" }}
-        />
-        {/* 가독성 오버레이 (라이트 테마 유지) */}
-        <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-white/85 via-white/70 to-white/90" />
         <div className="pointer-events-none absolute inset-0 -z-10 opacity-60">
           <div className="absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-brand/10 blur-[120px]" />
         </div>
@@ -203,7 +204,7 @@ export default function Home() {
       {/* ===== USE CASES (실전 사용 사례) ===== */}
       <section
         id="usecases"
-        className="border-y border-slate-100 bg-slate-50 py-16 sm:py-24"
+        className="border-y border-white/40 bg-white/45 py-16 sm:py-24 backdrop-blur-sm"
       >
         <div className="mx-auto max-w-5xl px-5">
           <SectionHead
@@ -246,8 +247,8 @@ export default function Home() {
         <section
           key={c.id}
           id={c.id}
-          className={`border-t border-slate-100 py-16 sm:py-24 ${
-            ci % 2 === 1 ? "bg-slate-50" : "bg-white"
+          className={`border-t border-white/40 py-16 sm:py-24 backdrop-blur-sm ${
+            ci % 2 === 1 ? "bg-white/45" : "bg-white/65"
           }`}
         >
           <div className="mx-auto max-w-5xl px-5">
@@ -286,7 +287,7 @@ export default function Home() {
       ))}
 
       {/* ===== CTA / RESOURCES ===== */}
-      <section className="border-t border-slate-100 bg-white py-20">
+      <section className="border-t border-white/40 bg-white/60 py-20 backdrop-blur-sm">
         <div className="mx-auto max-w-4xl px-5 text-center">
           <h2 className="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
             오늘 배운 걸 <span className="text-brand">내일 업무</span>에
@@ -323,7 +324,7 @@ export default function Home() {
       </section>
 
       {/* ===== FOOTER ===== */}
-      <footer className="border-t border-slate-100 bg-slate-50 py-10">
+      <footer className="border-t border-white/40 bg-white/55 py-10 backdrop-blur-sm">
         <div className="mx-auto max-w-6xl px-5 text-center text-sm text-slate-500">
           <p className="font-semibold text-slate-700">
             KBS 임직원 대상 팩트챗(FactChat) 활용 교육
