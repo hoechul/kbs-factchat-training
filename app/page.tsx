@@ -3,6 +3,7 @@ import SideMenu from "@/components/SideMenu";
 import QuizCard from "@/components/QuizCard";
 import UseCaseCard from "@/components/UseCaseCard";
 import PointCard from "@/components/PointCard";
+import FreeModelGuide from "@/components/FreeModelGuide";
 import {
   CURRICULUM,
   OVERVIEW,
@@ -188,6 +189,8 @@ export default function Home() {
           <b className="text-slate-900">챗봇 비교(Multi-model)</b> 기능으로 두
           모델에게 동시에 물어보고 답을 비교하세요.
         </p>
+
+        <FreeModelGuide />
       </section>
 
       {/* ===== USE CASES (실전 사용 사례) ===== */}
@@ -299,6 +302,12 @@ export default function Home() {
               ⬇ PDF로 다운로드
             </a>
             <a
+              href="/guidelines"
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 shadow-sm transition hover:bg-slate-50"
+            >
+              📕 KBS 보도·표기 규정 정리본
+            </a>
+            <a
               href="#top"
               className="rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 shadow-sm transition hover:bg-slate-50"
             >
@@ -306,8 +315,8 @@ export default function Home() {
             </a>
           </div>
           <p className="mt-4 text-xs text-slate-400">
-            요약 페이지에서 [PDF 다운로드] 버튼을 누르면 1장짜리 요약본을 PDF로
-            저장할 수 있습니다.
+            [1장 요약]과 [보도·표기 규정 정리본]은 각 페이지의 [PDF 다운로드]
+            버튼으로 PDF 저장이 가능합니다.
           </p>
         </div>
       </section>

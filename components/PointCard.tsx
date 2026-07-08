@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { POINT_EXAMPLES } from "@/lib/curriculum";
+import DownloadButtons from "@/components/DownloadButtons";
 
 // 특정 학습 포인트 제목 → 공식 문서 링크
 const DOC_LINKS: Record<string, string> = {
@@ -114,6 +115,7 @@ export default function PointCard({
                       <span>{ex.tip}</span>
                     </p>
                   )}
+                  <DownloadButtons downloads={ex.downloads} />
                 </div>
               )}
             </>

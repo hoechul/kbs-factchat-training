@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { UseCase } from "@/lib/curriculum";
+import DownloadButtons from "@/components/DownloadButtons";
 
 const LEVEL_STYLE: Record<string, string> = {
   입문: "bg-mint/10 text-emerald-600 border-emerald-200",
@@ -119,6 +120,9 @@ export default function UseCaseCard({ uc }: { uc: UseCase }) {
               {uc.prompt.body}
             </pre>
           </div>
+
+          {/* 실습 자료 다운로드 */}
+          <DownloadButtons downloads={uc.downloads} />
 
           {/* result + tip */}
           <div className="mt-4 grid gap-3 sm:grid-cols-2">

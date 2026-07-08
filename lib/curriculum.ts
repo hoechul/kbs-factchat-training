@@ -8,6 +8,13 @@ export type Prompt = {
   tip?: string;
 };
 
+// 다운로드용 실습 자료 (public/docs 에 위치)
+export type DownloadFile = {
+  label: string; // 버튼에 표시할 이름
+  path: string; // 정적 파일 경로 (예: /docs/xxx.pdf)
+  filename: string; // 실제 저장될 한글 파일명
+};
+
 export type Quiz = {
   question: string;
   options: string[];
@@ -296,6 +303,7 @@ export type UseCase = {
   prompt: { title: string; body: string };
   result: string; // 기대 결과
   tip: string;
+  downloads?: DownloadFile[]; // 실습용 다운로드 자료
 };
 
 export const USE_CASES: UseCase[] = [
@@ -342,6 +350,18 @@ export const USE_CASES: UseCase[] = [
     result:
       "여러 장짜리 자료가 회의에 바로 쓸 수 있는 요약표로 정리됩니다.",
     tip: "같은 파일로 계속 질문할 땐 다시 올리지 말고 그 대화에서 이어 물어보세요(크레딧 절약).",
+    downloads: [
+      {
+        label: "월드컵 보도자료 ①",
+        path: "/docs/kbs-worldcup-press-1.pdf",
+        filename: "KBS_월드컵_보도자료_1.pdf",
+      },
+      {
+        label: "월드컵 보도자료 ②",
+        path: "/docs/kbs-worldcup-press-2.pdf",
+        filename: "KBS_월드컵_보도자료_2.pdf",
+      },
+    ],
   },
   {
     id: "uc-research",
@@ -385,6 +405,13 @@ export const USE_CASES: UseCase[] = [
     },
     result: "카드뉴스에 바로 쓸 수 있는 배경/일러스트 시안 여러 장을 얻습니다.",
     tip: "초상권·저작권 이슈를 피하려면 '실제 인물 얼굴 제외'를 명시하는 습관이 좋습니다.",
+    downloads: [
+      {
+        label: "사내 가이드(생성형 AI 활용)",
+        path: "/docs/kbs-internal-guide-ai.pdf",
+        filename: "KBS_사내_가이드_생성형AI활용.pdf",
+      },
+    ],
   },
   {
     id: "uc-minutes",
@@ -451,6 +478,13 @@ export const USE_CASES: UseCase[] = [
     result:
       "\"협찬 자막 표기 규정 알려줘\" 같은 질문에 문서 근거와 함께 답하는 전용 챗봇이 완성됩니다.",
     tip: "'문서에 없으면 없다고 답하라'는 규칙이 잘못된 정보를 지어내는 것(환각)을 막는 핵심입니다.",
+    downloads: [
+      {
+        label: "사내 규정(정보보안)",
+        path: "/docs/kbs-internal-policy-security.pdf",
+        filename: "KBS_사내_규정_정보보안.pdf",
+      },
+    ],
   },
   {
     id: "uc-data",
@@ -491,6 +525,7 @@ export type PointExample = {
   title: string; // 사례 제목
   body: string; // 복사용 프롬프트
   tip?: string;
+  downloads?: DownloadFile[]; // 실습용 다운로드 자료
 };
 
 export const POINT_EXAMPLES: Record<string, PointExample> = {
@@ -568,6 +603,13 @@ export const POINT_EXAMPLES: Record<string, PointExample> = {
     title: "학습 문서 근거로만 답하게 하기",
     body: "우리 부서 제작 가이드 기준으로, 외부 협찬 자막 표기 절차와 규정을 정리해줘.\n- 근거가 된 문서명·항목 번호를 표시\n- 문서에 없는 내용은 '가이드에 없음'이라고 답할 것\n- 담당자 체크리스트 형태로 정리",
     tip: "'문서에 없으면 없다고 답하라'가 환각(없는 사실 지어내기) 방지의 핵심입니다.",
+    downloads: [
+      {
+        label: "제작 가이드(자막 표기)",
+        path: "/docs/kbs-production-guide-caption.pdf",
+        filename: "KBS_제작_가이드_자막표기.pdf",
+      },
+    ],
   },
   "활용 사례 시연 & 공유·배포": {
     title: "배포 전 챗봇 테스트하기",
