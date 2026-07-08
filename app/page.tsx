@@ -14,7 +14,7 @@ import {
 
 export default function Home() {
   return (
-    <main id="top" className="relative overflow-hidden bg-white xl:pl-60">
+    <main id="top" className="relative overflow-hidden bg-transparent xl:pl-60">
       <Nav />
       <SideMenu />
 
@@ -32,7 +32,7 @@ export default function Home() {
 
           <h1 className="animate-fadeup mt-6 text-4xl font-black leading-[1.15] tracking-tight text-slate-900 sm:text-6xl">
             방송 실무, <br className="sm:hidden" />
-            <span className="bg-gradient-to-r from-brand via-red-500 to-brand-deep bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent via-accent-soft to-brand bg-clip-text text-transparent">
               멀티 LLM
             </span>
             으로 <br />

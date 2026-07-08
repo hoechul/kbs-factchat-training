@@ -29,7 +29,7 @@ const ACTIONS = [
 
 export default function SummaryPage() {
   return (
-    <main className="min-h-screen bg-slate-100 py-8 print:bg-white print:py-0">
+    <main className="min-h-screen bg-[#eaf3fb] py-8 print:bg-white print:py-0">
       {/* ── 상단 컨트롤 (인쇄 시 숨김) ── */}
       <div className="no-print mx-auto mb-6 flex max-w-[820px] items-center justify-between px-5">
         <Link
