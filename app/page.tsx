@@ -19,9 +19,16 @@ export default function Home() {
       <SideMenu />
 
       {/* ===== HERO ===== */}
-      <section className="grid-glow relative pt-32 pb-20 sm:pt-40 sm:pb-28">
+      <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
+        {/* 배경 이미지 */}
+        <div
+          className="pointer-events-none absolute inset-0 -z-20 bg-cover bg-center"
+          style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+        />
+        {/* 가독성 오버레이 (라이트 테마 유지) */}
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-white/85 via-white/70 to-white/90" />
         <div className="pointer-events-none absolute inset-0 -z-10 opacity-60">
-          <div className="absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-brand/15 blur-[120px]" />
+          <div className="absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-brand/10 blur-[120px]" />
         </div>
 
         <div className="mx-auto max-w-5xl px-5 text-center">
