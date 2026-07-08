@@ -1,4 +1,5 @@
 import Nav from "@/components/Nav";
+import SideMenu from "@/components/SideMenu";
 import CopyPrompt from "@/components/CopyPrompt";
 import QuizCard from "@/components/QuizCard";
 import UseCaseCard from "@/components/UseCaseCard";
@@ -12,8 +13,9 @@ import {
 
 export default function Home() {
   return (
-    <main id="top" className="relative overflow-hidden bg-white">
+    <main id="top" className="relative overflow-hidden bg-white xl:pl-60">
       <Nav />
+      <SideMenu />
 
       {/* ===== HERO ===== */}
       <section className="grid-glow relative pt-32 pb-20 sm:pt-40 sm:pb-28">
@@ -340,14 +342,24 @@ export default function Home() {
           <p className="mt-3 text-xs">
             교육용 강의교안 · 콘텐츠는 팩트챗 공식 문서를 참고해 작성되었습니다.
           </p>
-          <a
-            href="https://github.com/hoechul/kbs-factchat-training"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-block text-xs font-medium text-slate-500 underline underline-offset-4 transition hover:text-slate-900"
-          >
-            GitHub 소스 보기 ↗
-          </a>
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <a
+              href="https://docs.mindlogic.ai/docs/mindlogic-prod/factchat/getting-started/introduction#-%EC%86%8C%EA%B0%9C"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-xs font-medium text-slate-500 underline underline-offset-4 transition hover:text-slate-900"
+            >
+              팩트챗 매뉴얼 ↗
+            </a>
+            <a
+              href="https://github.com/hoechul/kbs-factchat-training"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-xs font-medium text-slate-500 underline underline-offset-4 transition hover:text-slate-900"
+            >
+              GitHub 소스 보기 ↗
+            </a>
+          </div>
         </div>
       </footer>
     </main>
