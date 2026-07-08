@@ -31,15 +31,15 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background: #060913;
-  color: #e5e9f5;
+  background: #ffffff;
+  color: #0f172a;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 ::selection {
-  background: rgba(37, 99, 235, 0.4);
-  color: #fff;
+  background: rgba(37, 99, 235, 0.2);
+  color: #0b1020;
 }
 
 /* subtle scrollbar */
@@ -48,11 +48,11 @@ body {
   height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(148, 163, 184, 0.25);
+  background: rgba(100, 116, 139, 0.3);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(148, 163, 184, 0.4);
+  background: rgba(100, 116, 139, 0.5);
 }
 
 @keyframes floaty {
@@ -71,7 +71,7 @@ body {
 
 .grid-glow {
   background-image:
-    radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.18), transparent 45%),
-    radial-gradient(circle at 80% 0%, rgba(124, 58, 237, 0.15), transparent 40%),
-    radial-gradient(circle at 50% 100%, rgba(244, 63, 94, 0.1), transparent 45%);
+    radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.1), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(124, 58, 237, 0.09), transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(244, 63, 94, 0.06), transparent 45%);
 }

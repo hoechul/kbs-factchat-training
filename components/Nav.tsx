@@ -26,7 +26,7 @@ export default function Nav() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all ${
         scrolled
-          ? "border-b border-white/10 bg-[#060913]/85 backdrop-blur-xl"
+          ? "border-b border-slate-200 bg-white/85 backdrop-blur-xl"
           : "border-b border-transparent"
       }`}
     >
@@ -35,7 +35,7 @@ export default function Nav() {
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-violet text-sm font-black text-white">
             F
           </span>
-          <span className="text-[15px] font-bold tracking-tight text-white">
+          <span className="text-[15px] font-bold tracking-tight text-slate-900">
             KBS <span className="text-slate-400">×</span> 팩트챗 교육
           </span>
         </a>
@@ -45,7 +45,7 @@ export default function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-slate-300 transition hover:bg-white/5 hover:text-white"
+              className="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900"
             >
               {l.label}
             </a>
@@ -54,7 +54,7 @@ export default function Nav() {
 
         <button
           onClick={() => setOpen((v) => !v)}
-          className="rounded-lg border border-white/10 px-3 py-2 text-sm text-slate-200 md:hidden"
+          className="rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-700 md:hidden"
           aria-label="메뉴"
         >
           {open ? "✕" : "☰"}
@@ -62,14 +62,14 @@ export default function Nav() {
       </nav>
 
       {open && (
-        <div className="border-t border-white/10 bg-[#060913]/95 px-5 py-3 md:hidden">
+        <div className="border-t border-slate-200 bg-white/95 px-5 py-3 md:hidden">
           <div className="grid grid-cols-3 gap-2">
             {LINKS.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg bg-white/5 px-3 py-2 text-center text-sm font-medium text-slate-200"
+                className="rounded-lg bg-slate-100 px-3 py-2 text-center text-sm font-medium text-slate-700"
               >
                 {l.label}
               </a>
