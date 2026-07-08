@@ -3,6 +3,7 @@ import SideMenu from "@/components/SideMenu";
 import CopyPrompt from "@/components/CopyPrompt";
 import QuizCard from "@/components/QuizCard";
 import UseCaseCard from "@/components/UseCaseCard";
+import PointCard from "@/components/PointCard";
 import {
   CURRICULUM,
   OVERVIEW,
@@ -261,24 +262,9 @@ export default function Home() {
             </p>
 
             {/* learning points */}
-            <div className="mt-10 grid gap-3 sm:grid-cols-2">
+            <div className="mt-10 grid items-start gap-3 sm:grid-cols-2">
               {c.points.map((p, i) => (
-                <div
-                  key={i}
-                  className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
-                >
-                  <div className="flex items-start gap-3">
-                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-brand/10 text-sm font-bold text-brand">
-                      {i + 1}
-                    </span>
-                    <div>
-                      <h4 className="font-bold text-slate-900">{p.head}</h4>
-                      <p className="mt-1 text-sm leading-relaxed text-slate-600">
-                        {p.desc}
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <PointCard key={i} head={p.head} desc={p.desc} index={i} />
               ))}
             </div>
 
