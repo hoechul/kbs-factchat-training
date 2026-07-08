@@ -1,6 +1,5 @@
 import Nav from "@/components/Nav";
 import SideMenu from "@/components/SideMenu";
-import CopyPrompt from "@/components/CopyPrompt";
 import QuizCard from "@/components/QuizCard";
 import UseCaseCard from "@/components/UseCaseCard";
 import PointCard from "@/components/PointCard";
@@ -267,27 +266,6 @@ export default function Home() {
                 <PointCard key={i} head={p.head} desc={p.desc} index={i} />
               ))}
             </div>
-
-            {/* prompts */}
-            {c.prompts && c.prompts.length > 0 && (
-              <div className="mt-12">
-                <div className="flex items-center gap-2">
-                  <span className="text-lg">⚡</span>
-                  <h3 className="text-xl font-bold text-slate-900">
-                    바로 쓰는 실무 프롬프트
-                  </h3>
-                </div>
-                <p className="mt-1 text-sm text-slate-500">
-                  복사 버튼을 누르고 팩트챗에 붙여넣어 바로 실습하세요. 대괄호
-                  [ ] 부분만 여러분의 내용으로 바꾸면 됩니다.
-                </p>
-                <div className="mt-5 grid gap-4">
-                  {c.prompts.map((p, i) => (
-                    <CopyPrompt key={i} prompt={p} />
-                  ))}
-                </div>
-              </div>
-            )}
 
             {/* quiz */}
             <div className="mt-12">
