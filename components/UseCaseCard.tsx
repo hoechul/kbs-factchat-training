@@ -5,7 +5,7 @@ import type { UseCase } from "@/lib/curriculum";
 
 const LEVEL_STYLE: Record<string, string> = {
   입문: "bg-mint/10 text-emerald-600 border-emerald-200",
-  기초: "bg-brand/10 text-brand border-blue-200",
+  기초: "bg-brand/10 text-brand border-red-200",
   중급: "bg-violet/10 text-violet border-violet-200",
 };
 
