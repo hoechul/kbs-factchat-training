@@ -29,11 +29,15 @@ export default function UseCaseCard({ uc }: { uc: UseCase }) {
   };
 
   return (
-    <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md">
+    <div
+      className={`overflow-hidden rounded-3xl border bg-white shadow-sm transition hover:shadow-md ${
+        open ? "border-brand/40 ring-1 ring-brand/20" : "border-slate-200"
+      }`}
+    >
       {/* header (toggle) */}
-      <button
+      <div
         onClick={() => setOpen((v) => !v)}
-        className="flex w-full items-start gap-4 p-6 text-left"
+        className="flex w-full cursor-pointer flex-col gap-4 p-6 sm:flex-row sm:items-start"
       >
         <span className="text-3xl leading-none">{uc.icon}</span>
         <div className="flex-1">
@@ -57,14 +61,24 @@ export default function UseCaseCard({ uc }: { uc: UseCase }) {
             {uc.goal}
           </p>
         </div>
-        <span
-          className={`mt-1 shrink-0 text-slate-400 transition ${
-            open ? "rotate-180" : ""
+
+        {/* 우측 상단 큰 버튼 */}
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            setOpen((v) => !v);
+          }}
+          aria-expanded={open}
+          className={`flex shrink-0 items-center justify-center gap-2 rounded-2xl px-6 py-3.5 text-base font-bold shadow-sm transition ${
+            open
+              ? "border border-slate-300 bg-white text-slate-600 hover:bg-slate-50"
+              : "bg-brand text-white shadow-brand/25 hover:bg-brand-deep"
           }`}
         >
-          ▾
-        </span>
-      </button>
+          <span>{open ? "접기" : "사례 보기"}</span>
+          <span className={`transition ${open ? "rotate-180" : ""}`}>▾</span>
+        </button>
+      </div>
 
       {/* body */}
       {open && (
