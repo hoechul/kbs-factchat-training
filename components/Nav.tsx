@@ -33,11 +33,16 @@ export default function Nav() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5">
         <a href="#top" className="flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-brand-deep text-sm font-black text-white">
-            F
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/kbs-logo.png"
+            alt="KBS"
+            className="h-8 w-auto"
+            width={739}
+            height={140}
+          />
           <span className="text-[15px] font-bold tracking-tight text-slate-900">
-            KBS <span className="text-slate-400">×</span> 팩트챗 교육
+            <span className="text-slate-400">×</span> 팩트챗 교육
           </span>
         </a>
 
