@@ -309,12 +309,28 @@ export default function Home() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a
+              href="/summary"
+              className="inline-flex items-center gap-2 rounded-xl bg-brand px-6 py-3.5 text-sm font-bold text-white shadow-sm shadow-brand/25 transition hover:bg-brand-deep"
+            >
+              📄 오늘의 교육 1장 요약 보기
+            </a>
+            <a
+              href="/summary"
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 shadow-sm transition hover:bg-slate-50"
+            >
+              ⬇ PDF로 다운로드
+            </a>
+            <a
               href="#top"
               className="rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 shadow-sm transition hover:bg-slate-50"
             >
               처음으로 ↑
             </a>
           </div>
+          <p className="mt-4 text-xs text-slate-400">
+            요약 페이지에서 [PDF 다운로드] 버튼을 누르면 1장짜리 요약본을 PDF로
+            저장할 수 있습니다.
+          </p>
         </div>
       </section>
 
@@ -328,24 +344,14 @@ export default function Home() {
           <p className="mt-3 text-xs">
             교육용 강의교안 · 콘텐츠는 팩트챗 공식 문서를 참고해 작성되었습니다.
           </p>
-          <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
-            <a
-              href="https://docs.mindlogic.ai/docs/mindlogic-prod/factchat/getting-started/introduction#-%EC%86%8C%EA%B0%9C"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-xs font-medium text-slate-500 underline underline-offset-4 transition hover:text-slate-900"
-            >
-              팩트챗 매뉴얼 ↗
-            </a>
-            <a
-              href="https://github.com/hoechul/kbs-factchat-training"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-xs font-medium text-slate-500 underline underline-offset-4 transition hover:text-slate-900"
-            >
-              GitHub 소스 보기 ↗
-            </a>
-          </div>
+          <a
+            href="https://docs.mindlogic.ai/docs/mindlogic-prod/factchat/getting-started/introduction#-%EC%86%8C%EA%B0%9C"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-block text-xs font-medium text-slate-500 underline underline-offset-4 transition hover:text-slate-900"
+          >
+            팩트챗 매뉴얼 ↗
+          </a>
         </div>
       </footer>
     </main>
