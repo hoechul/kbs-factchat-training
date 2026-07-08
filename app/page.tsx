@@ -295,6 +295,14 @@ export default function Home() {
           <p className="mt-3 text-xs">
             교육용 강의교안 · 콘텐츠는 팩트챗 공식 문서를 참고해 작성되었습니다.
           </p>
+          <a
+            href="https://github.com/hoechul/kbs-factchat-training"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-block text-xs font-medium text-slate-400 underline underline-offset-4 transition hover:text-white"
+          >
+            GitHub 소스 보기 ↗
+          </a>
         </div>
       </footer>
     </main>
