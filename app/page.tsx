@@ -114,15 +114,16 @@ export default function Home() {
       </section>
 
       {/* ===== CURRICULUM TIMELINE ===== */}
-      <section id="curriculum" className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
-        <SectionHead
-          eyebrow="커리큘럼"
-          title="2시간 · 4단계 학습 여정"
-          desc="도입 → 기본 → 심화 → 마무리. 이론과 실습을 오가며 몸으로 익힙니다."
-        />
+      <section id="curriculum" className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-5">
+          <SectionHead
+            eyebrow="커리큘럼"
+            title="2시간 · 4단계 학습 여정"
+            desc="도입 → 기본 → 심화 → 마무리. 이론과 실습을 오가며 몸으로 익힙니다."
+          />
 
-        <div className="mt-12 grid gap-4 md:grid-cols-4">
-          {CURRICULUM.map((c, i) => (
+          <div className="mt-12 grid gap-4 md:grid-cols-4">
+            {CURRICULUM.map((c, i) => (
             <a
               key={c.id}
               href={`#${c.id}`}
@@ -150,11 +151,13 @@ export default function Home() {
               </span>
             </a>
           ))}
+          </div>
         </div>
       </section>
 
       {/* ===== LLM COMPARE ===== */}
-      <section className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
+      <section className="bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-5">
         <SectionHead
           eyebrow="주요 LLM 비교"
           title="일에 맞는 '전문가'를 고르세요"
@@ -199,6 +202,7 @@ export default function Home() {
         </p>
 
         <FreeModelGuide />
+        </div>
       </section>
 
       {/* ===== USE CASES (실전 사용 사례) ===== */}
