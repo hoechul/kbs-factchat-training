@@ -302,12 +302,6 @@ export default function Home() {
               ⬇ PDF로 다운로드
             </a>
             <a
-              href="/guidelines"
-              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 shadow-sm transition hover:bg-slate-50"
-            >
-              📕 KBS 보도·표기 규정 정리본
-            </a>
-            <a
               href="#top"
               className="rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 shadow-sm transition hover:bg-slate-50"
             >
@@ -315,8 +309,8 @@ export default function Home() {
             </a>
           </div>
           <p className="mt-4 text-xs text-slate-400">
-            [1장 요약]과 [보도·표기 규정 정리본]은 각 페이지의 [PDF 다운로드]
-            버튼으로 PDF 저장이 가능합니다.
+            [1장 요약]은 페이지의 [PDF 다운로드] 버튼으로 PDF 저장이
+            가능합니다.
           </p>
         </div>
       </section>
