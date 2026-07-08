@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 const LINKS = [
   { href: "#overview", label: "개요" },
   { href: "#curriculum", label: "커리큘럼" },
+  { href: "#usecases", label: "사용사례" },
   { href: "#intro", label: "도입" },
   { href: "#basic", label: "기본" },
   { href: "#advanced", label: "심화" },

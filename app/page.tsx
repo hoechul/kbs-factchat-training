@@ -1,7 +1,14 @@
 import Nav from "@/components/Nav";
 import CopyPrompt from "@/components/CopyPrompt";
 import QuizCard from "@/components/QuizCard";
-import { CURRICULUM, OVERVIEW, LLM_COMPARE } from "@/lib/curriculum";
+import UseCaseCard from "@/components/UseCaseCard";
+import {
+  CURRICULUM,
+  OVERVIEW,
+  LLM_COMPARE,
+  USE_CASES,
+  FACTCHAT_URL,
+} from "@/lib/curriculum";
 
 export default function Home() {
   return (
@@ -54,8 +61,8 @@ export default function Home() {
           <div className="animate-fadeup mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4">
             {[
               { k: "120분", v: "총 교육 시간" },
-              { k: "3종", v: "멀티 LLM 비교" },
-              { k: "10+", v: "실무 프롬프트" },
+              { k: "8가지", v: "실전 사용 사례" },
+              { k: "15+", v: "복사용 프롬프트" },
               { k: "4개", v: "섹션별 퀴즈" },
             ].map((s) => (
               <div
@@ -181,6 +188,47 @@ export default function Home() {
         </p>
       </section>
 
+      {/* ===== USE CASES (실전 사용 사례) ===== */}
+      <section
+        id="usecases"
+        className="border-y border-slate-100 bg-slate-50 py-16 sm:py-24"
+      >
+        <div className="mx-auto max-w-5xl px-5">
+          <SectionHead
+            eyebrow="실전 사용 사례"
+            title="지금 바로 따라 하는 8가지"
+            desc="팩트챗에 로그인한 상태에서, 각 카드를 펼쳐 순서대로만 따라 하면 됩니다. 초보자도 5분이면 첫 결과물을 만듭니다."
+          />
+
+          <div className="mx-auto mt-6 flex max-w-2xl flex-col items-center gap-3 rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm sm:flex-row sm:text-left">
+            <span className="text-2xl">🚀</span>
+            <p className="flex-1 text-sm leading-relaxed text-slate-600">
+              먼저 팩트챗을 새 탭에서 열어두고, 아래 사례의 프롬프트를 <b className="text-slate-900">복사 → 붙여넣기</b>만
+              하세요.
+            </p>
+            <a
+              href={FACTCHAT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 rounded-xl bg-brand px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-brand-deep"
+            >
+              팩트챗 열기 ↗
+            </a>
+          </div>
+
+          <div className="mt-8 grid gap-4">
+            {USE_CASES.map((uc) => (
+              <UseCaseCard key={uc.id} uc={uc} />
+            ))}
+          </div>
+
+          <p className="mt-6 text-center text-xs text-slate-400">
+            ※ 메뉴·버튼 이름은 팩트챗 업데이트에 따라 조금 다를 수 있습니다. 큰
+            흐름(기능 위치)은 동일합니다.
+          </p>
+        </div>
+      </section>
+
       {/* ===== CURRICULUM DETAIL SECTIONS ===== */}
       {CURRICULUM.map((c, ci) => (
         <section
@@ -272,14 +320,6 @@ export default function Home() {
             만들어보세요. 작은 자동화가 가장 큰 변화를 만듭니다.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a
-              href="https://docs.mindlogic.ai/docs/eland/factchat/getting-started/introduction"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl bg-brand px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-brand/25 transition hover:bg-brand-deep"
-            >
-              팩트챗 공식 가이드 ↗
-            </a>
             <a
               href="#top"
               className="rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 shadow-sm transition hover:bg-slate-50"
