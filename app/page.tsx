@@ -15,8 +15,8 @@ import {
 export default function Home() {
   return (
     <main id="top" className="relative overflow-hidden bg-transparent xl:pl-60">
-      {/* 페이지 전체 고정 배경 (라이트 · 은은한 틸 틴트) */}
-      <div className="pointer-events-none fixed inset-0 -z-20 bg-[#f4f8f8]" />
+      {/* 페이지 전체 고정 배경 (옅은 녹색) */}
+      <div className="pointer-events-none fixed inset-0 -z-20 bg-[#e7f1ea]" />
       <div className="grid-glow pointer-events-none fixed inset-0 -z-10" />
 
       <Nav />
@@ -208,7 +208,7 @@ export default function Home() {
       {/* ===== USE CASES (실전 사용 사례) ===== */}
       <section
         id="usecases"
-        className="border-y border-white/40 bg-white/45 py-16 sm:py-24 backdrop-blur-sm"
+        className="border-y border-[#8cc3a6] bg-gradient-to-b from-[#d3ebdf] to-[#a7d3bb] py-16 sm:py-24"
       >
         <div className="mx-auto max-w-5xl px-5">
           <SectionHead
