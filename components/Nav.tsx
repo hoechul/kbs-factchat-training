@@ -37,12 +37,19 @@ export default function Nav() {
           <img
             src="/kbs-logo.png"
             alt="KBS"
-            className="h-8 w-auto"
+            className={`h-8 w-auto transition ${
+              scrolled ? "" : "rounded-md bg-white/90 px-2 py-1 shadow-sm"
+            }`}
             width={739}
             height={140}
           />
-          <span className="text-[15px] font-bold tracking-tight text-slate-900">
-            <span className="text-slate-400">×</span> 팩트챗 교육
+          <span
+            className={`text-[15px] font-bold tracking-tight ${
+              scrolled ? "text-slate-900" : "text-white drop-shadow"
+            }`}
+          >
+            <span className={scrolled ? "text-slate-400" : "text-white/60"}>×</span>{" "}
+            팩트챗 교육
           </span>
         </a>
 
@@ -51,7 +58,11 @@ export default function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900"
+              className={`rounded-lg px-3 py-2 text-sm font-medium transition ${
+                scrolled
+                  ? "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                  : "text-white/85 hover:bg-white/15 hover:text-white"
+              }`}
             >
               {l.label}
             </a>
@@ -60,7 +71,11 @@ export default function Nav() {
 
         <button
           onClick={() => setOpen((v) => !v)}
-          className="rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-700 md:hidden"
+          className={`rounded-lg border px-3 py-2 text-sm md:hidden ${
+            scrolled
+              ? "border-slate-200 text-slate-700"
+              : "border-white/40 text-white"
+          }`}
           aria-label="메뉴"
         >
           {open ? "✕" : "☰"}

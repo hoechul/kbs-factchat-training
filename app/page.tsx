@@ -22,43 +22,47 @@ export default function Home() {
       <Nav />
       <SideMenu />
 
-      {/* ===== HERO ===== */}
-      <section className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
-        <div className="pointer-events-none absolute inset-0 -z-10 opacity-60">
-          <div className="absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-brand/10 blur-[120px]" />
-        </div>
+      {/* ===== HERO (이미지 배경 헤더) ===== */}
+      <section className="relative overflow-hidden pt-32 pb-20 text-white sm:pt-40 sm:pb-28">
+        {/* 배경 이미지 (녹차밭) */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/y4il5454un261.jpg')" }}
+        />
+        {/* 가독성 오버레이 (딥 틸 톤) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#04302f]/85 via-[#04302f]/60 to-[#04302f]/90" />
 
-        <div className="mx-auto max-w-5xl px-5 text-center">
-          <div className="animate-fadeup mx-auto inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-4 py-1.5 text-sm text-slate-600">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-mint" />
+        <div className="relative mx-auto max-w-5xl px-5 text-center">
+          <div className="animate-fadeup mx-auto inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-sm text-white/90 backdrop-blur-sm">
+            <span className="h-2 w-2 animate-pulse rounded-full bg-accent" />
             2026. 7. 10 · KBS 임직원 대상 · 2시간 완성
           </div>
 
-          <h1 className="animate-fadeup mt-6 text-4xl font-black leading-[1.15] tracking-tight text-slate-900 sm:text-6xl">
+          <h1 className="animate-fadeup mt-6 text-4xl font-black leading-[1.15] tracking-tight text-white drop-shadow sm:text-6xl">
             방송 실무, <br className="sm:hidden" />
-            <span className="bg-gradient-to-r from-accent via-accent-soft to-brand bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent-soft via-accent to-accent-soft bg-clip-text text-transparent">
               멀티 LLM
             </span>
             으로 <br />
             더 빠르고 정확하게
           </h1>
 
-          <p className="animate-fadeup mx-auto mt-6 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+          <p className="animate-fadeup mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
             GPT · Claude · Gemini를 한 곳에서 골라 쓰는 생성형 AI 플랫폼{" "}
-            <b className="text-slate-900">팩트챗(FactChat)</b>. 취재·구성·자막·행정
+            <b className="text-white">팩트챗(FactChat)</b>. 취재·구성·자막·행정
             업무에 바로 적용하는 실무 활용법을 2시간에 완성합니다.
           </p>
 
           <div className="animate-fadeup mt-9 flex flex-wrap items-center justify-center gap-3">
             <a
               href="#curriculum"
-              className="rounded-xl bg-brand px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-brand/25 transition hover:bg-brand-deep"
+              className="rounded-xl bg-white px-6 py-3.5 text-sm font-bold text-brand shadow-lg shadow-black/20 transition hover:bg-white/90"
             >
               커리큘럼 살펴보기 →
             </a>
             <a
               href="#intro"
-              className="rounded-xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 shadow-sm transition hover:bg-slate-50"
+              className="rounded-xl border border-white/40 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition hover:bg-white/20"
             >
               강의 시작하기
             </a>
@@ -74,10 +78,10 @@ export default function Home() {
             ].map((s) => (
               <div
                 key={s.v}
-                className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
+                className="rounded-2xl border border-white/20 bg-white/10 p-4 shadow-lg shadow-black/10 backdrop-blur-md"
               >
-                <div className="text-2xl font-black text-slate-900">{s.k}</div>
-                <div className="mt-1 text-xs text-slate-500">{s.v}</div>
+                <div className="text-2xl font-black text-white">{s.k}</div>
+                <div className="mt-1 text-xs text-white/70">{s.v}</div>
               </div>
             ))}
           </div>
