@@ -69,6 +69,20 @@ body {
   animation: fadeup 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+/* 첨부 배너 이미지를 재현한 블루 대각선 그라디언트 (페이지 일반 배경) */
+.page-bg {
+  background-color: #1c2478;
+  background-image:
+    /* 우상단 밝은 대각선 하이라이트 */
+    linear-gradient(115deg, rgba(255, 255, 255, 0.06) 0%, transparent 34%),
+    /* 우측 딥네이비 대각선 웨지 */
+    linear-gradient(250deg, #161c5e 0%, #161c5e 20%, transparent 46%),
+    /* 중앙~우측 밝은 대각선 패싯 */
+    linear-gradient(105deg, transparent 48%, rgba(80, 104, 220, 0.35) 58%, transparent 66%),
+    /* 좌→우 기본 블루→네이비 그라디언트 */
+    linear-gradient(105deg, #3346cf 0%, #2c3cba 42%, #232c92 70%, #1c2478 100%);
+}
+
 .grid-glow {
   background-image:
     radial-gradient(circle at 20% 20%, rgba(2, 132, 199, 0.12), transparent 45%),
