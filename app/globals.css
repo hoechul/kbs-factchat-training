@@ -4,15 +4,16 @@
   --font-sans: "Pretendard", "Pretendard Variable", -apple-system, BlinkMacSystemFont,
     "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
 
-  --color-ink: #0f2744;
-  --color-ink-soft: #334155;
-  --color-brand: #0284c7;
-  --color-brand-deep: #0369a1;
-  --color-accent: #06b6d4;
-  --color-accent-soft: #38bdf8;
-  --color-mint: #10b981;
-  --color-amber: #f59e0b;
-  --color-violet: #6366f1;
+  /* yjd-250530.vercel.app 기준: 딥 틸 + 골드, 웜 그레이 텍스트 */
+  --color-ink: #111111;
+  --color-ink-soft: #2a2a2a;
+  --color-brand: #005051;
+  --color-brand-deep: #003d3e;
+  --color-accent: #cc9965;
+  --color-accent-soft: #e0b070;
+  --color-mint: #0a6a6b;
+  --color-amber: #cc9965;
+  --color-violet: #0a6a6b;
 }
 
 @font-face {
@@ -31,15 +32,15 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background: #f2f8fd;
-  color: #0f2744;
+  background: #f4f8f8;
+  color: #2a2a2a;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 ::selection {
-  background: rgba(2, 132, 199, 0.18);
-  color: #0f2744;
+  background: rgba(0, 80, 81, 0.16);
+  color: #111111;
 }
 
 /* subtle scrollbar */
@@ -69,25 +70,11 @@ body {
   animation: fadeup 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-/* 첨부 배너 이미지를 재현한 블루 대각선 그라디언트 (페이지 일반 배경) */
-.page-bg {
-  background-color: #1c2478;
-  background-image:
-    /* 우상단 밝은 대각선 하이라이트 */
-    linear-gradient(115deg, rgba(255, 255, 255, 0.06) 0%, transparent 34%),
-    /* 우측 딥네이비 대각선 웨지 */
-    linear-gradient(250deg, #161c5e 0%, #161c5e 20%, transparent 46%),
-    /* 중앙~우측 밝은 대각선 패싯 */
-    linear-gradient(105deg, transparent 48%, rgba(80, 104, 220, 0.35) 58%, transparent 66%),
-    /* 좌→우 기본 블루→네이비 그라디언트 */
-    linear-gradient(105deg, #3346cf 0%, #2c3cba 42%, #232c92 70%, #1c2478 100%);
-}
-
 .grid-glow {
   background-image:
-    radial-gradient(circle at 20% 20%, rgba(2, 132, 199, 0.12), transparent 45%),
-    radial-gradient(circle at 80% 0%, rgba(6, 182, 212, 0.1), transparent 40%),
-    radial-gradient(circle at 50% 100%, rgba(56, 189, 248, 0.08), transparent 45%);
+    radial-gradient(circle at 20% 20%, rgba(0, 80, 81, 0.1), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(204, 153, 101, 0.1), transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(10, 106, 107, 0.08), transparent 45%);
 }
 
 /* ── 인쇄 / PDF 저장 (1장 요약) ── */

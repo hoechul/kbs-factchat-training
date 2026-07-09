@@ -15,13 +15,9 @@ import {
 export default function Home() {
   return (
     <main id="top" className="relative overflow-hidden bg-transparent xl:pl-60">
-      {/* 페이지 전체 고정 배경 이미지 (back.png) */}
-      <div
-        className="pointer-events-none fixed inset-0 -z-20 bg-cover bg-center"
-        style={{ backgroundImage: "url('/back.png')" }}
-      />
-      {/* 가독성 오버레이 (은은하게) */}
-      <div className="pointer-events-none fixed inset-0 -z-10 bg-white/25" />
+      {/* 페이지 전체 고정 배경 (라이트 · 은은한 틸 틴트) */}
+      <div className="pointer-events-none fixed inset-0 -z-20 bg-[#f4f8f8]" />
+      <div className="grid-glow pointer-events-none fixed inset-0 -z-10" />
 
       <Nav />
       <SideMenu />
