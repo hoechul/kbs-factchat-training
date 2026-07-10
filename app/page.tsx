@@ -49,7 +49,7 @@ export default function Home() {
 
           <p className="animate-fadeup mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
             GPT · Claude · Gemini를 한 곳에서 골라 쓰는 생성형 AI 플랫폼{" "}
-            <b className="text-white">카이로스챗(FactChat)</b>. 취재·구성·자막·행정
+            <b className="text-white">카이로스챗(KairosChat)</b>. 취재·구성·자막·행정
             업무에 바로 적용하는 실무 활용법을 2시간에 완성합니다.
           </p>
 
@@ -331,7 +331,7 @@ export default function Home() {
       <footer className="border-t border-white/40 bg-white/55 py-10 backdrop-blur-sm">
         <div className="mx-auto max-w-6xl px-5 text-center text-sm text-slate-500">
           <p className="font-semibold text-slate-700">
-            KBS 임직원 대상 카이로스챗(FactChat) 활용 교육
+            KBS 임직원 대상 카이로스챗(KairosChat) 활용 교육
           </p>
           <p className="mt-1">2026. 7. 10 · 총 2시간 · 이론 + 시연 & 실습</p>
           <p className="mt-3 text-xs">

@@ -518,7 +518,7 @@ export const OVERVIEW = [
   { icon: "📅", label: "일시", value: "2026. 7. 10 (금)" },
   { icon: "⏱️", label: "시간", value: "총 2시간 (120분)" },
   { icon: "💻", label: "방식", value: "이론 + 시연 & 실습" },
-  { icon: "🤖", label: "플랫폼", value: "카이로스챗 (FactChat)" },
+  { icon: "🤖", label: "플랫폼", value: "카이로스챗 (KairosChat)" },
   { icon: "🎯", label: "목표", value: "실무 즉시 적용" },
 ];
 

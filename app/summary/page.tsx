@@ -169,7 +169,7 @@ export default function SummaryPage() {
 
         {/* footer */}
         <footer className="mt-6 border-t border-slate-200 pt-3 text-[10.5px] text-slate-400">
-          KBS 임직원 대상 카이로스챗(FactChat) 활용 교육 · 교육용 강의교안 ·
+          KBS 임직원 대상 카이로스챗(KairosChat) 활용 교육 · 교육용 강의교안 ·
           콘텐츠는 카이로스챗 공식 문서를 참고해 작성되었습니다.
         </footer>
       </article>

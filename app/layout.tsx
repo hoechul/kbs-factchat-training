@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "KBS 카이로스챗(FactChat) 활용 교육 | 2시간 완성 실무 과정",
+  title: "KBS 카이로스챗(KairosChat) 활용 교육 | 2시간 완성 실무 과정",
   description:
     "KBS 임직원을 위한 멀티 LLM 플랫폼 '카이로스챗' 실무 활용 교육. 멀티 LLM 개념부터 나만의 챗봇·RAG 구축, 방송 실무 프롬프트, 섹션별 퀴즈까지 2시간 완성 강의교안.",
   keywords: [
     "KBS",
     "카이로스챗",
-    "FactChat",
+    "KairosChat",
     "멀티 LLM",
     "생성형 AI 교육",
     "챗봇 만들기",
