@@ -49,7 +49,7 @@ export default function Home() {
 
           <p className="animate-fadeup mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/85 sm:text-lg">
             GPT · Claude · Gemini를 한 곳에서 골라 쓰는 생성형 AI 플랫폼{" "}
-            <b className="text-white">팩트챗(FactChat)</b>. 취재·구성·자막·행정
+            <b className="text-white">카이로스챗(FactChat)</b>. 취재·구성·자막·행정
             업무에 바로 적용하는 실무 활용법을 2시간에 완성합니다.
           </p>
 
@@ -161,7 +161,7 @@ export default function Home() {
         <SectionHead
           eyebrow="주요 LLM 비교"
           title="일에 맞는 '전문가'를 고르세요"
-          desc="모델마다 잘하는 일이 다릅니다. 팩트챗은 이 셋을 한 화면에서 골라 씁니다."
+          desc="모델마다 잘하는 일이 다릅니다. 카이로스챗은 이 셋을 한 화면에서 골라 씁니다."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {LLM_COMPARE.map((m) => (
@@ -214,13 +214,13 @@ export default function Home() {
           <SectionHead
             eyebrow="실전 사용 사례"
             title="지금 바로 따라 하는 8가지"
-            desc="팩트챗에 로그인한 상태에서, 각 카드를 펼쳐 순서대로만 따라 하면 됩니다. 초보자도 5분이면 첫 결과물을 만듭니다."
+            desc="카이로스챗에 로그인한 상태에서, 각 카드를 펼쳐 순서대로만 따라 하면 됩니다. 초보자도 5분이면 첫 결과물을 만듭니다."
           />
 
           <div className="mx-auto mt-6 flex max-w-2xl flex-col items-center gap-3 rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm sm:flex-row sm:text-left">
             <span className="text-2xl">🚀</span>
             <p className="flex-1 text-sm leading-relaxed text-slate-600">
-              먼저 팩트챗을 새 탭에서 열어두고, 아래 사례의 프롬프트를 <b className="text-slate-900">복사 → 붙여넣기</b>만
+              먼저 카이로스챗을 새 탭에서 열어두고, 아래 사례의 프롬프트를 <b className="text-slate-900">복사 → 붙여넣기</b>만
               하세요.
             </p>
             <a
@@ -229,7 +229,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="shrink-0 rounded-xl bg-brand px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-brand-deep"
             >
-              팩트챗 열기 ↗
+              카이로스챗 열기 ↗
             </a>
           </div>
 
@@ -240,7 +240,7 @@ export default function Home() {
           </div>
 
           <p className="mt-6 text-center text-xs text-slate-400">
-            ※ 메뉴·버튼 이름은 팩트챗 업데이트에 따라 조금 다를 수 있습니다. 큰
+            ※ 메뉴·버튼 이름은 카이로스챗 업데이트에 따라 조금 다를 수 있습니다. 큰
             흐름(기능 위치)은 동일합니다.
           </p>
         </div>
@@ -331,11 +331,11 @@ export default function Home() {
       <footer className="border-t border-white/40 bg-white/55 py-10 backdrop-blur-sm">
         <div className="mx-auto max-w-6xl px-5 text-center text-sm text-slate-500">
           <p className="font-semibold text-slate-700">
-            KBS 임직원 대상 팩트챗(FactChat) 활용 교육
+            KBS 임직원 대상 카이로스챗(FactChat) 활용 교육
           </p>
           <p className="mt-1">2026. 7. 10 · 총 2시간 · 이론 + 시연 & 실습</p>
           <p className="mt-3 text-xs">
-            교육용 강의교안 · 콘텐츠는 팩트챗 공식 문서를 참고해 작성되었습니다.
+            교육용 강의교안 · 콘텐츠는 카이로스챗 공식 문서를 참고해 작성되었습니다.
           </p>
           <a
             href="https://docs.mindlogic.ai/docs/mindlogic-prod/factchat/getting-started/introduction#-%EC%86%8C%EA%B0%9C"
@@ -343,7 +343,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="mt-3 inline-block text-xs font-medium text-slate-500 underline underline-offset-4 transition hover:text-slate-900"
           >
-            팩트챗 매뉴얼 ↗
+            카이로스챗 매뉴얼 ↗
           </a>
         </div>
       </footer>

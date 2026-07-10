@@ -12,7 +12,7 @@ export default function QuizCard({ quiz, index }: { quiz: Quiz; index: number })
       <div className="flex items-center gap-2 text-amber-600">
         <span className="text-lg">🧠</span>
         <span className="text-xs font-bold uppercase tracking-widest">
-          팩트챗 퀴즈 #{index}
+          카이로스챗 퀴즈 #{index}
         </span>
       </div>
 

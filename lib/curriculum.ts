@@ -1,4 +1,4 @@
-// KBS 팩트챗 활용 교육 콘텐츠 데이터
+// KBS 카이로스챗 활용 교육 콘텐츠 데이터
 // 참고: https://docs.mindlogic.ai/docs/eland/factchat/getting-started/introduction
 
 export type Prompt = {
@@ -70,7 +70,7 @@ export const CURRICULUM: Curriculum[] = [
     badge: "오리엔테이션",
     title: "왜 지금, 멀티 LLM인가",
     summary:
-      "하나의 AI만 쓰는 시대는 끝났습니다. GPT·Claude·Gemini를 상황에 맞게 골라 쓰는 '멀티 LLM' 개념과 팩트챗을 써야 하는 이유를 이해합니다.",
+      "하나의 AI만 쓰는 시대는 끝났습니다. GPT·Claude·Gemini를 상황에 맞게 골라 쓰는 '멀티 LLM' 개념과 카이로스챗을 써야 하는 이유를 이해합니다.",
     color: "from-brand/25 to-transparent",
     points: [
       {
@@ -101,7 +101,7 @@ export const CURRICULUM: Curriculum[] = [
       ],
       answer: 1,
       explain:
-        "멀티 LLM은 '일을 맡길 전문가(모델)'를 상황에 따라 바꿔 쓰는 개념입니다. 팩트챗은 한 화면에서 GPT·Claude·Gemini를 자유롭게 선택할 수 있습니다.",
+        "멀티 LLM은 '일을 맡길 전문가(모델)'를 상황에 따라 바꿔 쓰는 개념입니다. 카이로스챗은 한 화면에서 GPT·Claude·Gemini를 자유롭게 선택할 수 있습니다.",
     },
   },
   {
@@ -109,13 +109,13 @@ export const CURRICULUM: Curriculum[] = [
     phase: "기본",
     time: "40분",
     badge: "이론",
-    title: "팩트챗 기본기 & 똑똑하게 쓰는 법",
+    title: "카이로스챗 기본기 & 똑똑하게 쓰는 법",
     summary:
-      "팩트챗의 핵심 기능을 훑고, 어떤 상황에 어떤 모델을 골라야 하는지, 크레딧(토큰)은 무엇이며 데이터 보안은 어떻게 지키는지 배웁니다.",
+      "카이로스챗의 핵심 기능을 훑고, 어떤 상황에 어떤 모델을 골라야 하는지, 크레딧(토큰)은 무엇이며 데이터 보안은 어떻게 지키는지 배웁니다.",
     color: "from-violet/25 to-transparent",
     points: [
       {
-        head: "팩트챗 기본 기능 안내",
+        head: "카이로스챗 기본 기능 안내",
         desc: "채팅하기 · 챗봇 비교(Multi-model) · 웹 검색 · 심층 사고 · 파일 업로드 · 대화 공유. 그리고 한 번의 요청으로 검색·분석·이미지·PPT까지 끝내는 'Super Agent'와 종합 보고서를 만드는 'Deep Research'가 핵심입니다.",
       },
       {
@@ -124,7 +124,7 @@ export const CURRICULUM: Curriculum[] = [
       },
       {
         head: "상황별 LLM 선택 기준",
-        desc: "업무용(정확·안정) → Claude/GPT, 학습·리서치용(최신·근거) → Gemini/웹 검색, 창작·아이디어용 → GPT. '헷갈리면 챗봇 비교로 두 모델에 동시에 물어보기'가 팩트챗의 강점입니다.",
+        desc: "업무용(정확·안정) → Claude/GPT, 학습·리서치용(최신·근거) → Gemini/웹 검색, 창작·아이디어용 → GPT. '헷갈리면 챗봇 비교로 두 모델에 동시에 물어보기'가 카이로스챗의 강점입니다.",
       },
       {
         head: "크레딧(토큰) 개념 & 절약 전략",
@@ -132,7 +132,7 @@ export const CURRICULUM: Curriculum[] = [
       },
       {
         head: "데이터 보안 & 활용 유의사항",
-        desc: "팩트챗은 자체 인프라에서 보안이 유지된 환경으로 운영됩니다. 그래도 ① 취재원 실명·개인정보·미공개 기밀은 최소화, ② AI 답변은 반드시 사람이 '팩트체크', ③ 저작권·초상권 확인 후 사용이 3대 원칙입니다.",
+        desc: "카이로스챗은 자체 인프라에서 보안이 유지된 환경으로 운영됩니다. 그래도 ① 취재원 실명·개인정보·미공개 기밀은 최소화, ② AI 답변은 반드시 사람이 '팩트체크', ③ 저작권·초상권 확인 후 사용이 3대 원칙입니다.",
       },
     ],
     prompts: [
@@ -292,7 +292,7 @@ export type UseCase = {
   icon: string;
   title: string;
   goal: string; // 무엇을 얻는가
-  feature: string; // 사용하는 팩트챗 기능
+  feature: string; // 사용하는 카이로스챗 기능
   level: "입문" | "기초" | "중급";
   time: string;
   steps: string[]; // 클릭/입력 단계
@@ -312,7 +312,7 @@ export const USE_CASES: UseCase[] = [
     level: "입문",
     time: "5분",
     steps: [
-      "팩트챗에 로그인한 뒤, 왼쪽 메뉴에서 [채팅하기](새 대화)를 클릭합니다.",
+      "카이로스챗에 로그인한 뒤, 왼쪽 메뉴에서 [채팅하기](새 대화)를 클릭합니다.",
       "입력창 위(또는 옆)의 모델 선택에서 글쓰기에 강한 GPT 또는 Claude를 고릅니다.",
       "아래 프롬프트를 복사해 입력창에 붙여넣고, 대괄호 [ ] 안을 내 주제로 바꿉니다.",
       "엔터를 눌러 결과를 받고, 마음에 안 들면 \"더 짧게\", \"더 쉽게\"처럼 이어서 요청합니다.",
@@ -518,7 +518,7 @@ export const OVERVIEW = [
   { icon: "📅", label: "일시", value: "2026. 7. 10 (금)" },
   { icon: "⏱️", label: "시간", value: "총 2시간 (120분)" },
   { icon: "💻", label: "방식", value: "이론 + 시연 & 실습" },
-  { icon: "🤖", label: "플랫폼", value: "팩트챗 (FactChat)" },
+  { icon: "🤖", label: "플랫폼", value: "카이로스챗 (FactChat)" },
   { icon: "🎯", label: "목표", value: "실무 즉시 적용" },
 ];
 
@@ -535,7 +535,7 @@ export const POINT_EXAMPLES: Record<string, PointExample> = {
   // ── 도입 ──
   "교육 목적 & 기대효과": {
     title: "내 업무 중 AI로 줄일 수 있는 일 찾기",
-    body: "나는 KBS에서 [담당 업무: 예) 편성/보도/제작 행정]을 맡고 있어.\n내가 매주 반복하는 업무를 아래에 적을게. 이 중 팩트챗으로 시간을 줄일 수 있는 일을 골라주고, 각각 어떻게 활용하면 좋을지 한 줄로 제안해줘.\n\n반복 업무:\n1) [예: 보도자료 요약]\n2) [예: 회의록 정리]\n3) [예: 자료 조사]",
+    body: "나는 KBS에서 [담당 업무: 예) 편성/보도/제작 행정]을 맡고 있어.\n내가 매주 반복하는 업무를 아래에 적을게. 이 중 카이로스챗으로 시간을 줄일 수 있는 일을 골라주고, 각각 어떻게 활용하면 좋을지 한 줄로 제안해줘.\n\n반복 업무:\n1) [예: 보도자료 요약]\n2) [예: 회의록 정리]\n3) [예: 자료 조사]",
     tip: "가장 자주·오래 걸리는 일부터 AI에 맡겨보세요.",
   },
   "멀티 LLM이란?": {
@@ -562,7 +562,7 @@ export const POINT_EXAMPLES: Record<string, PointExample> = {
   },
 
   // ── 기본 ──
-  "팩트챗 기본 기능 안내": {
+  "카이로스챗 기본 기능 안내": {
     title: "Super Agent로 한 번에 끝내기",
     body: "'여름철 물놀이 안전'을 주제로 다음을 한 번에 만들어줘.\n1) 핵심 사실 5가지 (출처 포함)\n2) 카드뉴스 문구 5장\n3) 진행자 멘트 30초\n마지막에 추가 확인이 필요한 항목을 따로 표시해줘.",
     tip: "Super Agent는 '검색 → 정리 → 콘텐츠 제작'을 한 번의 요청으로 처리합니다.",
@@ -590,7 +590,7 @@ export const POINT_EXAMPLES: Record<string, PointExample> = {
       {
         label: "테스트용 개인정보 명단(가상 10명)",
         path: "/docs/kbs-test-personal-data.pdf",
-        filename: "KBS_팩트챗_가명처리_실습_테스트명단.pdf",
+        filename: "KBS_카이로스챗_가명처리_실습_테스트명단.pdf",
       },
     ],
   },

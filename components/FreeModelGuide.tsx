@@ -1,5 +1,5 @@
-// 팩트챗 무료(무제한) 모델 활용법 — 토큰/크레딧 절약 가이드
-// 근거: 팩트챗은 모델별 '비용' 항목에 '무료(무제한)'로 표시됨 (공식 문서 chat 안내)
+// 카이로스챗 무료(무제한) 모델 활용법 — 토큰/크레딧 절약 가이드
+// 근거: 카이로스챗은 모델별 '비용' 항목에 '무료(무제한)'로 표시됨 (공식 문서 chat 안내)
 
 const FIND_STEPS = [
   "채팅 화면의 모델 선택 드롭다운(또는 챗봇 상세 정보)을 엽니다.",
@@ -64,7 +64,7 @@ export default function FreeModelGuide() {
         </h3>
       </div>
       <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600">
-        팩트챗에는 크레딧을 소모하지 않는 <b className="text-slate-900">무료(무제한)
+        카이로스챗에는 크레딧을 소모하지 않는 <b className="text-slate-900">무료(무제한)
         모델</b>이 제공됩니다. 이 무료 모델 2개만 잘 써도 대부분의 반복 업무는{" "}
         <b className="text-brand">크레딧 0원</b>으로 처리할 수 있습니다.
       </p>

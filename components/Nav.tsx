@@ -49,7 +49,7 @@ export default function Nav() {
             }`}
           >
             <span className={scrolled ? "text-slate-400" : "text-white/60"}>×</span>{" "}
-            팩트챗 교육
+            카이로스챗 교육
           </span>
         </a>
 

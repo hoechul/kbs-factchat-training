@@ -6,7 +6,7 @@ import DownloadButtons from "@/components/DownloadButtons";
 
 // 특정 학습 포인트 제목 → 공식 문서 링크
 const DOC_LINKS: Record<string, string> = {
-  "팩트챗 기본 기능 안내":
+  "카이로스챗 기본 기능 안내":
     "https://docs.mindlogic.ai/docs/mindlogic-prod/factchat/product/chat#%EC%B1%84%ED%8C%85%ED%95%98%EA%B8%B0",
   "나만의 챗봇 만들기 (스튜디오)":
     "https://docs.mindlogic.ai/docs/mindlogic-prod/factchat/product/studio#%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4",

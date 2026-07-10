@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-팩트챗 '가명 처리' 실습용 테스트 PDF 생성 스크립트.
+카이로스챗 '가명 처리' 실습용 테스트 PDF 생성 스크립트.
 ⚠️ 아래 데이터는 전부 가상(합성)입니다. 실제 인물과 무관합니다.
 """
 from reportlab.lib.pagesizes import A4
@@ -61,13 +61,13 @@ cell_head = ParagraphStyle("CH", parent=styles["Normal"], fontName=KFONT_B,
 doc = SimpleDocTemplate(OUT, pagesize=A4,
                         leftMargin=18 * mm, rightMargin=18 * mm,
                         topMargin=18 * mm, bottomMargin=18 * mm,
-                        title="KBS 팩트챗 실습용 테스트 명단(가상 데이터)")
+                        title="KBS 카이로스챗 실습용 테스트 명단(가상 데이터)")
 
 flow = []
 flow.append(Paragraph("KBS 방송 이벤트 참가자 명단 (테스트용)", title_style))
 flow.append(Spacer(1, 4 * mm))
 flow.append(Paragraph(
-    "본 문서는 <b>팩트챗 '가명 처리(개인정보 마스킹)' 실습</b>을 위한 예제 자료입니다. "
+    "본 문서는 <b>카이로스챗 '가명 처리(개인정보 마스킹)' 실습</b>을 위한 예제 자료입니다. "
     "채팅에 이 표를 붙여넣고, 개인정보를 [이름1]·[연락처] 등 가명으로 바꾸는 프롬프트를 연습해 보세요.",
     sub_style))
 flow.append(Spacer(1, 3 * mm))

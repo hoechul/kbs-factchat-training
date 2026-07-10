@@ -56,7 +56,7 @@ export default function SummaryPage() {
               1장 요약 · Cheat Sheet
             </div>
             <h1 className="mt-2 text-2xl font-black tracking-tight text-slate-900">
-              KBS 팩트챗 활용 교육
+              KBS 카이로스챗 활용 교육
             </h1>
             <p className="mt-1 text-sm text-slate-500">
               방송 실무, 멀티 LLM으로 더 빠르고 정확하게
@@ -169,8 +169,8 @@ export default function SummaryPage() {
 
         {/* footer */}
         <footer className="mt-6 border-t border-slate-200 pt-3 text-[10.5px] text-slate-400">
-          KBS 임직원 대상 팩트챗(FactChat) 활용 교육 · 교육용 강의교안 ·
-          콘텐츠는 팩트챗 공식 문서를 참고해 작성되었습니다.
+          KBS 임직원 대상 카이로스챗(FactChat) 활용 교육 · 교육용 강의교안 ·
+          콘텐츠는 카이로스챗 공식 문서를 참고해 작성되었습니다.
         </footer>
       </article>
 
